@@ -1,0 +1,103 @@
+@import '../../assets/styles/shared-styles.scss';
+
+.footer{
+   position: relative;
+   background-color: $yellow;
+
+   &__wrapper{
+    padding: 94px 0;
+    height: 389px;
+    max-width: 508px;
+    margin: 0 auto;
+    @include media("<=tablet"){
+        height: auto;
+        padding: 64px 16px 45px 16px;
+       }
+   }
+   &__heading{
+        max-width: 495px;
+    h1{
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 17px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 22.9px;
+        margin-bottom: 53px;
+    }
+    @include media("<=tablet"){
+        max-width: 100%;
+        text-align: center;
+        h1{
+            font-size: 24px;
+        }
+        p{
+            font-size: 14px; 
+        }
+    }
+   }
+   &__emailSubscription{
+    display: flex;
+    justify-content: space-between;
+    input{
+        height: 48px;
+        width: 342px;
+        border: 2px solid $white;
+        background-color: $yellow;
+    }
+    input::placeholder{
+        color: $white;
+        padding-left: 36px
+    }
+    button{
+        width: 157px;
+        height: 48px;
+        color: $white;
+        background: $dark;
+        border: 0px; 
+    }
+    @include media('<=tablet'){
+        input{
+            height: 40px;
+            width: 300px;
+        }
+        button{
+            height: 40px;
+            width: 200px;
+            margin-left: 5px;
+        }
+    }
+   }
+   &__bottom{
+    background-color: $yellow2;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 8.52px;
+    color: $white;
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 139px;
+    
+    &_right{
+        display: flex;
+        p:first-child{
+            margin-right: 10px;
+        }
+    }
+    @include media("<=sdesktop"){
+        padding: 10px 70px 0px 70px;
+      }
+    @include media("<=tablet"){
+        height: auto;
+        flex-direction: column;
+        padding: 10px 16px 0px 16px;
+        p{
+            margin-bottom: 12px;
+        }
+       }
+   }
+}

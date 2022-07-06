@@ -1,0 +1,43 @@
+@import '../../assets/styles/shared-styles.scss';
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    padding: 43px 130px 0 125px;
+    max-width: 1440px;
+    @include media("<=sdesktop"){
+        padding: 43px 70px 0px 50px;
+      }
+    @include media('<=tablet'){
+        padding: 13px 16px 0 0px
+    }
+        @include media('>1440px') {
+            margin: 0 auto;
+        }
+    ul{
+        margin-top: 12px;
+        list-style: none;
+        display: flex;
+        padding: 0px;
+    
+        @include media('<=phone'){
+            display: none;
+         }
+        li{
+            font-size: 14px;
+            font-weight: 700;
+            color: $dark;
+            @include media('<=tablet'){
+                font-size: 12px;
+
+            }
+        }
+        li:not(:last-child){
+            margin-right: 33px;
+            @include media('<=tablet'){
+                margin-right: 20px;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import '../../assets/styles/shared-styles.scss';
+
+.optionInfo{
+    max-width: 338px;
+    margin-bottom: 59px;
+    @include media("<=phone"){
+        margin-bottom: 25px; 
+    }
+   &__icon{
+    margin-bottom: 19px;
+   }
+   &__text{
+    h1{
+        font-size: 20px;
+        color: $dark;
+        margin-bottom: 19px;
+        @include media("<=phone"){
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+    }
+    p{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.6px;
+        color: $grey2;
+        @include media("<=phone"){
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+    }
+   }
+}
