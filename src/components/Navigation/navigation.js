@@ -5,13 +5,16 @@ const Navigation = () => {
   return (
     <div className={styles.navigation}>
       <div className={styles.navigation__logo} id="navItem">
-      <Icon name="logo" />
+        <Icon name="logo" />
       </div>
-      <ul>
-        <li id="navItem">The App</li>
-        <li id="navItem">About Us</li>
-        <li id="navItem">Get in Touch</li>
-      </ul>
+      <div>
+        <ul>
+          <li id="navItem">The App</li>
+          <li id="navItem">About Us</li>
+          <li id="navItem">Get in Touch</li>
+        </ul>
+        <Icon name="menu" className={styles.navigation__menu} />
+      </div>
     </div>
   );
 };
