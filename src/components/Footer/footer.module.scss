@@ -46,11 +46,13 @@
         width: 342px;
         border: 2px solid $white;
         background-color: $yellow;
+        outline: none;
     }
     input::placeholder{
         color: $white;
         padding-left: 36px
     }
+
     button{
         width: 157px;
         height: 48px;
